@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import axios from 'axios'
 import contactService from './services/contacts'
 
 
@@ -60,7 +59,6 @@ const Contacts = ({persons, handleErase}) => (
     )}
   </>
 )
-
 
 const App = () => {
   const [persons, setPersons] = useState([]) 
