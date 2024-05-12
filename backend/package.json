@@ -1,0 +1,24 @@
+{
+  "name": "firstexercise",
+  "version": "1.0.0",
+  "description": "FullstackOpen part3",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js",
+    "build": "rm -rf dist && cd ../frontend && npm run build && cp -r dist ../backend",
+    "deploy": "npm run build && fly deploy",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Väinö Heijari",
+  "license": "MIT",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "@flydotio/dockerfile": "^0.5.7",
+    "nodemon": "^3.1.0"
+  }
+}
